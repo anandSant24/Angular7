@@ -1,10 +1,10 @@
-// import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 
-// @Component({
-// 	selector: 'employee-home',
-// 	template: '{{pageTitle}}'	
-// })
+@Component({
+	selector: 'employee-home',
+	templateUrl: './employeeDetail.component.html'
+})
 
-// export class employeeComponent{
-// 	pageTitle: string = 'Employee'
-// }
+export class EmployeeComponent{
+	pageTitle: string = 'Employee'
+}
