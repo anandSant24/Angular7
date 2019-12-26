@@ -4,4 +4,9 @@
 </div>
 <portfolio-home></portfolio-home>
 <employee-home></employee-home>
+<create-employee></create-employee>
+<input type="text" [(ngModel)]="userInput"/>
+<simple-component [simpleUserInput]="userInput">
+	
+</simple-component>
 <router-outlet></router-outlet>

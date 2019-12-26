@@ -1,0 +1,26 @@
+<div>
+  <span>all {{all}}</span>
+  <input
+    type="radio"
+    value="all"
+    [(ngModel)]="selecteBtnValue"
+    (change)="radioSelected()"
+    name="category"
+  />
+  <span>male {{male}}</span>
+  <input
+    type="radio"
+    value="m"
+    [(ngModel)]="selecteBtnValue"
+    (change)="radioSelected()"
+    name="category"
+  />
+  <span>female {{female}}</span>
+  <input
+    type="radio"
+    value="f"
+    [(ngModel)]="selecteBtnValue"
+    name="category"
+    (change)="radioSelected()"
+  />
+</div>

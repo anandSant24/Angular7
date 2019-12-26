@@ -5,6 +5,7 @@
 
 	Nesting Component in Angular
 	Integrated Bootstrap and its dependencies, jQuery and pooper.js
+	
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
 
 ## Development server

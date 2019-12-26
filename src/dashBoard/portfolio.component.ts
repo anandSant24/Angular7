@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
 })
 
 export class PortfolioComponent{
-	portfolioName: string = "Anand Kumar Sant";
+	portfolioName: string = "Developer Name here";
 	protfolioRole: string = "Application Developer";
 }
