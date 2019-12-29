@@ -1,7 +1,7 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
-	selector: 'simple-component',
+	// selector: 'simple-component',
 	templateUrl: './simpleChanges.component.html'
 })
 
