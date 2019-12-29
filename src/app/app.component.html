@@ -1,4 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<div>
+    <a routerLink="create">Create Employee</a>
+</div>
 <div style="text-align:center">
 
 </div>
@@ -6,7 +9,7 @@
 <employee-home></employee-home>
 <create-employee></create-employee>
 <input type="text" [(ngModel)]="userInput"/>
-<simple-component [simpleUserInput]="userInput">
-	
+<simple-component [simpleUserInput]="userInput">	
 </simple-component>
+
 <router-outlet></router-outlet>

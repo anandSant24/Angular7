@@ -1,15 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
+import { BsDatepickerModule } from "ngx-bootstrap/datepicker";
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PortfolioComponent } from '../dashboard/portfolio.component';
 import { EmployeeComponent } from '../employee/employee.component';
 
+
 import { EmployeeDetailComponent } from '../employee/employeeDetail.component';
 import { EmployeeChildComponent } from "../employee/employeechild.component";
 import { CreateEmployeeComponent } from "../employee/createEmployee.component"
 import { SimpleChangesComponent } from "./simpleChanges.component";
+import { employeeCreateComponent } from "../employee/create-employye.component";
+
+let appRoutes: Routes = [
+  { path:'create', component: employeeCreateComponent},
+  { path: "", redirectTo:"/create", pathMatch:'full'}
+];
 
 @NgModule({
   declarations: [
@@ -19,12 +30,16 @@ import { SimpleChangesComponent } from "./simpleChanges.component";
     EmployeeDetailComponent,
     EmployeeChildComponent,
     CreateEmployeeComponent,
-    SimpleChangesComponent
+    SimpleChangesComponent,
+    employeeCreateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    BsDatepickerModule.forRoot(),
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
