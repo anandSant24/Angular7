@@ -6,6 +6,7 @@ import { OnInit } from '@angular/core';
 @Component({
   selector: "create-employee",
   templateUrl: "./createEmployee.component.html",
+  providers: [EmployeeService]
   
 })
 export class CreateEmployeeComponent implements OnInit{
