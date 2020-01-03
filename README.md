@@ -1,4 +1,5 @@
 # AngularApp
+Note disabled property when added is also disabling first radion button !!
 
 # Nov 21 2019 | 
 	Simple interpolation and creation of a component

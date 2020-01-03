@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { PortfolioComponent } from '../dashboard/portfolio.component';
 import { EmployeeComponent } from '../employee/employee.component';
 import { HttpClientModule } from '@angular/common/http';
+import { Routes, RouterModule } from '@angular/router';
 
 import { EmployeeDetailComponent } from '../employee/employeeDetail.component';
 import { EmployeeChildComponent } from "../employee/employeechild.component";
 import { CreateEmployeeComponent } from "../employee/createEmployee.component"
 import { SimpleChangesComponent } from "./simpleChanges.component";
-
+import { EmployeeCreateComponent } from "../employee/employeeCreate.component";
+const appRoutes: Routes = [
+  { path: "list", component: EmployeeDetailComponent },
+  { path: "create", component: EmployeeCreateComponent},
+  { path: "", redirectTo: "/list", pathMatch: "full"}
+]
 @NgModule({
   declarations: [
     AppComponent, 
@@ -20,13 +26,15 @@ import { SimpleChangesComponent } from "./simpleChanges.component";
     EmployeeDetailComponent,
     EmployeeChildComponent,
     CreateEmployeeComponent,
-    SimpleChangesComponent
+    SimpleChangesComponent,
+    EmployeeCreateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
