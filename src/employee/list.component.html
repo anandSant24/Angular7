@@ -1,0 +1,8 @@
+<div>list details</div>
+<input type="button" value="getDetails" (click)="getEmployeeDetails()"/>
+<div *ngIf="list.length">
+    <div *ngFor="let item of list">
+        {{item.name}}
+    </div>    
+</div
+    >

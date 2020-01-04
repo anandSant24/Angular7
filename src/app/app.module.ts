@@ -16,6 +16,7 @@ import { EmployeeChildComponent } from "../employee/employeechild.component";
 import { CreateEmployeeComponent } from "../employee/createEmployee.component"
 import { SimpleChangesComponent } from "./simpleChanges.component";
 import { employeeCreateComponent } from "../employee/create-employye.component";
+import { ListComponent } from '../employee/list.component';
 
 let appRoutes: Routes = [
   { path:'create', component: employeeCreateComponent},
@@ -31,7 +32,8 @@ let appRoutes: Routes = [
     EmployeeChildComponent,
     CreateEmployeeComponent,
     SimpleChangesComponent,
-    employeeCreateComponent
+    employeeCreateComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
