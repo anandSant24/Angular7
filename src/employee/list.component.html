@@ -1,4 +1,7 @@
-<div>list details</div>
+<div>Enter list details</div>
+
+<input type="text" (change)="getChanges()" />
+
 <input type="button" value="getDetails" (click)="getEmployeeDetails()"/>
 <div *ngIf="list.length">
     <div *ngFor="let item of list">
