@@ -8,7 +8,7 @@ export class SVCListService{
                 name:'aks getEmployees'
             },
             {
-                name:'bks getEmployees'
+                name:'cks getEmployees'
             }
         ]
     }
